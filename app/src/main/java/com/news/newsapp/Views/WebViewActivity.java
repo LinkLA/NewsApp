@@ -10,6 +10,11 @@ import android.webkit.WebViewClient;
 
 import com.news.newsapp.R;
 
+/**
+ * Class that sets up a WebView to show a previously new that was clicked by the user.
+ *
+ * It will only receive the url via Intent to then use it in the WebView configuration.
+ */
 public class WebViewActivity extends AppCompatActivity {
     private WebView webview;
 

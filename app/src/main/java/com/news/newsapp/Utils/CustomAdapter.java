@@ -17,6 +17,10 @@ import java.util.HashMap;
 /**
  * Created by joseph on 6/17/2018.
  */
+
+/**
+ * Class that enables our data to get correctly displayed in a custom ListView layout.xml file
+ */
 public class CustomAdapter extends SimpleAdapter {
     private ArrayList<HashMap<String, String>> mItems;
     private ArrayList<HashMap<String, String>> mItemsSelected = new ArrayList<HashMap<String, String>>();

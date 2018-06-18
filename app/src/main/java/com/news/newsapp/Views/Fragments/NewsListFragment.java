@@ -30,6 +30,12 @@ import java.util.List;
  * Created by joseph on 6/17/2018.
  */
 
+/**
+ * Class that enables our news list to get deployed
+ *
+ * It uses our CustomAdapter @see {@link CustomAdapter} to deploy the news list, allowing the user to store their favorite news
+ * inside the Realm database.
+ */
 public class NewsListFragment extends Fragment implements NewsView, CustomAdapter.OnListAdapterEventListener {
     private View mRootView;
     private Actions mPresenter;

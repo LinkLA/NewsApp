@@ -29,7 +29,9 @@ import java.util.List;
  */
 
 /**
+ * Class that enables our news list to get deployed
  *
+ * It uses a SimpleAdapter to deploy news that users previously got stored into the Realm database.
  */
 public class FavoriteNewsListFragment extends Fragment implements NewsView {
     private View mRootView;
@@ -89,10 +91,6 @@ public class FavoriteNewsListFragment extends Fragment implements NewsView {
         mContext.startActivity(intent);
     }
 
-    /**
-     * Sets up
-     * @param news
-     */
     private void prepareNewsAdapter(final List<New> news) {
         ArrayList<HashMap<String,String>> items = new ArrayList<>();
 

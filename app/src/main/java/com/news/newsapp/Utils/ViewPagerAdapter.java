@@ -12,6 +12,9 @@ import java.util.List;
  * Created by joseph on 6/17/2018.
  */
 
+/**
+ * Class that helps to set up our TabLayout throught fragments
+ */
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     private final List<Fragment> fragments = new ArrayList<>();
