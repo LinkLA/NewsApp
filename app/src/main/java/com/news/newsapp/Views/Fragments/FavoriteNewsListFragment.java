@@ -28,6 +28,9 @@ import java.util.List;
  * Created by joseph on 6/17/2018.
  */
 
+/**
+ *
+ */
 public class FavoriteNewsListFragment extends Fragment implements NewsView {
     private View mRootView;
     private Actions mPresenter;
@@ -86,6 +89,10 @@ public class FavoriteNewsListFragment extends Fragment implements NewsView {
         mContext.startActivity(intent);
     }
 
+    /**
+     * Sets up
+     * @param news
+     */
     private void prepareNewsAdapter(final List<New> news) {
         ArrayList<HashMap<String,String>> items = new ArrayList<>();
 

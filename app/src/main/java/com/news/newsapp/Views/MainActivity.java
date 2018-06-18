@@ -17,6 +17,9 @@ import javax.inject.Inject;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
+/**
+ * Sets up general Views, tabs layouts and  its fragments.
+ */
 public class MainActivity extends AppCompatActivity {
     @Inject
     New myNew;
@@ -47,22 +50,5 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
-
-        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
     }
 }
