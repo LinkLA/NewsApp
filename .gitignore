@@ -1,0 +1,5 @@
+repo
+.idea
+.gradle
+.git
+/build
