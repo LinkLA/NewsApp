@@ -88,6 +88,7 @@ public class FavoriteNewsListFragment extends Fragment implements NewsView {
 
         Intent intent = new Intent(mContext, WebViewActivity.class);
         intent.putExtra("url", item.getUrl() );
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         mContext.startActivity(intent);
     }
 
