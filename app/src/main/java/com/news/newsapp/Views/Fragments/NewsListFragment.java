@@ -123,6 +123,7 @@ public class NewsListFragment extends Fragment implements NewsView, CustomAdapte
     public void showNewOnWebView(New item) {
         Intent intent = new Intent(mContext, WebViewActivity.class);
         intent.putExtra("url", item.getUrl() );
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         mContext.startActivity(intent);
     }
 
